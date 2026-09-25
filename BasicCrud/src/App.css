@@ -1,0 +1,502 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    color: #263238;
+}
+
+
+/* ==========================================================
+   APP
+========================================================== */
+
+.app {
+    min-height: 100vh;
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.header {
+    background: linear-gradient(
+        135deg,
+        #172554,
+        #2563eb
+    );
+
+    color: white;
+
+    padding: 28px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.header p {
+    opacity: 0.85;
+}
+
+.header-icon {
+    font-size: 45px;
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container {
+    width: 84%;
+    max-width: 1300px;
+
+    margin: 35px auto;
+}
+
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.card {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+    margin-bottom: 25px;
+}
+
+.card h2 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #6b7280;
+}
+
+
+/* ==========================================================
+   FORMULARIO
+========================================================== */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.form-group label {
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    color: #374151;
+}
+
+.form-group input {
+
+    padding: 12px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.form-group input:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(
+            37,
+            99,
+            235,
+            0.12
+        );
+}
+
+
+/* ==========================================================
+   BOTONES
+========================================================== */
+
+.form-actions {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    gap: 10px;
+}
+
+.btn {
+
+    border: none;
+
+    padding: 11px 20px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.btn-primary {
+
+    background: #2563eb;
+
+    color: white;
+}
+
+.btn-primary:hover {
+
+    background: #1d4ed8;
+}
+
+.btn-secondary {
+
+    background: #e5e7eb;
+
+    color: #374151;
+}
+
+.btn-secondary:hover {
+
+    background: #d1d5db;
+}
+
+
+/* ==========================================================
+   LISTADO
+========================================================== */
+
+.list-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.search input {
+
+    width: 280px;
+
+    padding: 11px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    outline: none;
+}
+
+.search input:focus {
+
+    border-color: #2563eb;
+}
+
+
+/* ==========================================================
+   TABLA
+========================================================== */
+
+.table-container {
+
+    overflow-x: auto;
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+thead {
+
+    background: #f8fafc;
+}
+
+th {
+
+    text-align: left;
+
+    padding: 14px;
+
+    font-size: 13px;
+
+    color: #64748b;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+td {
+
+    padding: 15px 14px;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    font-size: 14px;
+}
+
+tbody tr:hover {
+
+    background: #f8fafc;
+}
+
+
+/* ==========================================================
+   ESTUDIANTE
+========================================================== */
+
+.student {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.avatar {
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================================
+   ID
+========================================================== */
+
+.id {
+
+    color: #64748b;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================================
+   BADGE
+========================================================== */
+
+.badge {
+
+    display: inline-block;
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================================
+   ACTIONS
+========================================================== */
+
+.actions {
+
+    display: flex;
+
+    gap: 8px;
+}
+
+.btn-edit,
+.btn-delete {
+
+    border: none;
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-edit {
+
+    background: #dbeafe;
+}
+
+.btn-edit:hover {
+
+    background: #bfdbfe;
+}
+
+.btn-delete {
+
+    background: #fee2e2;
+}
+
+.btn-delete:hover {
+
+    background: #fecaca;
+}
+
+
+/* ==========================================================
+   LOADING
+========================================================== */
+
+.loading {
+
+    text-align: center;
+
+    padding: 40px;
+
+    color: #64748b;
+}
+
+
+/* ==========================================================
+   EMPTY
+========================================================== */
+
+.empty {
+
+    text-align: center;
+
+    padding: 40px;
+
+    color: #64748b;
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+footer {
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    padding: 20px;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .container {
+
+        width: 94%;
+    }
+
+    .header {
+
+        padding: 25px 4%;
+    }
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .list-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .search {
+
+        width: 100%;
+    }
+
+    .search input {
+
+        width: 100%;
+    }
+
+}
